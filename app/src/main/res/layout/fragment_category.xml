@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.FeedFragment">
+
+    <LinearLayout
+        android:id="@+id/selectionup"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="@color/design_default_color_primary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/menu_live_tv"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/menu_videos"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/menu_library"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/selectionup"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/selectionbottom"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:background="@color/design_default_color_primary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/premium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/international"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/selectionup"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#000000"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/crowd_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/selectionup"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#000000"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/sports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/selectionup"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#000000"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/favourites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/selectionup"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="62dp"
+        tools:listitem="@layout/grid_recyclerview_item" />
+</RelativeLayout>

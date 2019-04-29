@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ZingoTV</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment1">Hello blank fragmentGuide</string>
+    <string name="hello_blank_fragment2">Hello blank fragmentFeed</string>
+    <string name="hello_blank_fragment3">Hello blank fragmentCategory</string>
+</resources>
