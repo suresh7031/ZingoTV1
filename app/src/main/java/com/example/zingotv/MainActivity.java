@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity implements GuideFragment.OnF
 
         jsonPlaceHolderApi = retrofit.create(JsonPlaceHolderApi.class);
         Map<String, String> parameters = new HashMap<>();
-        parameters.put("regToken", "1556300385SM95G");
+        parameters.put("regToken", "15565389381OLM3");
         parameters.put("ver_name", "setupbox3");
         parameters.put("ver_code", "5");
         final Call<JSONData> call = jsonPlaceHolderApi.getApiData(parameters);
